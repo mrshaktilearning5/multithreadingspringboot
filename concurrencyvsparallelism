@@ -1,0 +1,18 @@
+Concurrency
+------------
+
+Where two or more task can run simultaneously can be called as concurrency.
+In java it can be achieved using threads.
+
+Single core  machine: then task will run in inteleaved fashion
+
+Multiple core machine : then task will run in simultaneously .
+
+
+Parallelism
+------------
+
+It is the concept where two or more task run in parallel.
+
+Below steps as whole knows as fork/join introduced in java 7
+Steps:  breaks tasks in subtasks (forking) -> execure the subtask in sequential -> joining the result (join)
