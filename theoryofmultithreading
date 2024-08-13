@@ -1,0 +1,22 @@
+
+
+Java 1:
+Single core
+
+Java 5: 2004
+ThreadPool, ExecutorService, Futures, ConcurrentCollection
+In this task was crated a submitted to thread pool and once task is completed we were getting results.
+
+Deadlock issue
+
+Java 7: 2011
+
+Fork/Join Framework - introduced data parallelism
+
+Java 8: 2014
+
+Lamdas, Streams API - Parallel Streams, completablefutures
+
+
+Java 21 : 2023
+Virtual Threads
