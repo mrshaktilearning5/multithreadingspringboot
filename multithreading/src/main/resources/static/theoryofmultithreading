@@ -1,7 +1,7 @@
 
 
 Java 1:
-Single core
+Single core and in this Thread was introduced.
 
 Java 5: 2004
 ThreadPool, ExecutorService, Futures, ConcurrentCollection
