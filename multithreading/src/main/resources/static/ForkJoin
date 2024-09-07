@@ -1,0 +1,40 @@
+Form/Join Framework
+----------------------Java 7
+
+-It is extension of Executor Service
+- Key Difference between Fork/Join and Executor Serive
+    -Fork join -> Data parallelism
+    -Executor Service - Task Based Parallelism
+
+
+ How does the Fork/Join Framework works?
+ -----------------------------------------
+
+ As Fork Join Framework uses data parallelism , it uses form join pool
+
+
+ Component of Fork Join Pool
+ -----------------------------
+
+ Shared work queue - In this client submits task
+
+ Worker Threads - It contains Double ended work queues (Deck), this contineously pulls the task from the shared work queue
+                  and task get taken by one of threads, and places task in its double ended work queue.
+                  Task in deck always picks on LIFO order.
+
+ Work stealing - In fork join framework the task is shared or steal by another thread from another end of queue
+                 and hence executed and at end Result will be shared to client.
+
+ *************************************************************************
+
+ ForkJoin Task
+ --------------
+ It represent part of the data and its computation
+
+
+ Types of Task to submit to FormJoin Pool
+ ------------------------------------------
+
+ Recursive Task - it returns result value
+ RecursiveAction - it does not return a value
+

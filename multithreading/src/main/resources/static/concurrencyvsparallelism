@@ -15,6 +15,13 @@ Parallelism
 It is the concept where two or more task run in parallel.
 
 Below steps as whole knows as fork/join introduced in java 7
-Steps:  breaks tasks in subtasks (forking) -> execure the subtask in sequential -> joining the result (join).
+Steps:  breaks tasks in subtasks (forking) -> execute the subtask in sequential -> joining the result (join).
 
 it uses more resource and can work in only multicore machine.
+
+
+Data Parallelism
+----------------
+
+It is a concept where a given task is recursively split into to sub task until reaches the possible
+least size and then it executes task in parallel. It uses divide and conquer approach

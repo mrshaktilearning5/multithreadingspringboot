@@ -43,3 +43,9 @@ How all this component work together ?
 2 - as work queue works on FIFO as the thread pool picks up the task , completes it and places Result in CompletionQueue
 
 3 - Finally client can read result using Future
+
+
+Drawback of using ExecutorService
+-------------------------------------
+-As we have seen that executor service uses get call it block the call of thread. even if timeout is used.
+-there is not efficient was of joining the result
