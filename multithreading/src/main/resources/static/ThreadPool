@@ -1,0 +1,45 @@
+ThreadPool - It is nothing but group of threads, that is created to handle task assigned.
+
+How to decide ThreadPool Size
+-------------------------------
+
+    1: CPU intensive tasks - like complex algo or mathematical calculation
+       ThreadPoolSize = No of cores
+
+     2: I/O task - Database call or Resp Api call
+        ThreadPoolSize > No of cores
+
+
+
+ Benefits of ThreadPool
+ -----------------------
+
+ - No need to manually create, start and join the threads
+ - Achieving concurrency in application
+
+
+ThreadPool alone cannot do anything so we have Executor service
+
+
+ExecutorService
+---------------- java -5
+
+    ExecutorService - It is an asynchronous task execution engine
+
+
+    Components of Executor Service
+    ---------------------------------
+
+    1: ThreadPool
+    2: Work Queue : it is a  blocking queue, any time the client submit task to
+                    executor service, the task will be place in work queue
+
+    3: Completion Queue : The task completed by Threadpool will be placed in completion Queue.
+
+How all this component work together ?
+
+1 - When client submits task in work queue the client gets Future (Its a reference of result that will be available)
+
+2 - as work queue works on FIFO as the thread pool picks up the task , completes it and places Result in CompletionQueue
+
+3 - Finally client can read result using Future

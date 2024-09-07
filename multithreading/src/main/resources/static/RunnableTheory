@@ -1,0 +1,13 @@
+IN ProductServicesUsingThreads we have use Runnable interface to enhance the performance
+but to implement the Runnable interface
+
+Drawback of using Runnable
+
+    1 : we need to write a lot of code
+    2 : For each Asynchronous operation we need to have Thread and Runnable instance
+    3 : As Runnable doesn't take as input or return any things so for that we have to write
+        extra code like generating getting to fetch the result.
+    4 : Manually starting and join the result.
+    5 : Threads have their own runtime- stack memory, register etc.
+
+    TO SOLVE ABOVE PROBLEM THREAD POOL WAS CREATED.
