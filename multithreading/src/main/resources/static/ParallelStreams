@@ -1,0 +1,9 @@
+Parallel Streams
+-----------------
+
+-It allows the code to run in parallel
+-This concept is designed to solve data parallelism.
+
+|------------------------------------------------ |
+|   It uses parallelStream() in place of stream() |
+|-------------------------------------------------|
