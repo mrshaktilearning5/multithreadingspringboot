@@ -7,3 +7,26 @@ Parallel Streams
 |------------------------------------------------ |
 |   It uses parallelStream() in place of stream() |
 |-------------------------------------------------|
+
+
+
+How Parallel streams work?
+----------------------------
+It internally uses forkjoin framework.
+
+-split data into chunks
+-execute chunks data
+-combine chunks for final result
+
+
+Note Impt:
+
+In streams to collect data after performing either filter or map we want to get data as list and we
+uses either collect or reduce for the same.
+
+The key difference between Collect and Reduce is that Collect is immutable while reduce is mutable in terms of result.
+
+Reduce is used when we want to get Result in single value not list , what we get using collect
+
+
+- dont use parallel streams in case of Boxing or Unboxing
