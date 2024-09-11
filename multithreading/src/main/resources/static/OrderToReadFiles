@@ -4,4 +4,4 @@
 4- ThreadPool
 5-Fork/Join Framework
 6-Parallel streams
-
+7-CompletableFuture

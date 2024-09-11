@@ -1,0 +1,26 @@
+CompletableFuture
+-------------------- Java 8
+It is asynchronous Reactive Functional programming Api
+
+It allows to write asynchronous in functional style
+
+It overcomes limitation of Future
+
+
+CompletableFuture can be categorized into 3 category
+------------------------------------------------------
+
+Factory methods: these are static methods it initiate asynchronous computations
+
+            methods: supplyAsync() it return CompletableFuture<T>
+
+Completion Stage methods : It is completionStage methods
+            methods : thenAccept() it returns CompletableFuture<Void>
+            thenApply() :  it return a value
+            thenCompose() : it transform data from one form to another. it returns CompletableFuture<T>
+            use thenComponse only if you called other function before and waiting for response of that
+            then using thenCompose refer method helloWorldThenCompose in code
+
+Exception methods
+
+
